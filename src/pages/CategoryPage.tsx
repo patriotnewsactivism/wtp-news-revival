@@ -3,29 +3,29 @@ import { Layout } from '@/components/layout/Layout';
 import { ArticleGrid } from '@/components/articles/ArticleGrid';
 
 const categoryInfo: Record<string, { title: string; description: string }> = {
-  politics: {
-    title: 'Politics',
-    description: 'Political news, analysis, and commentary from Washington and beyond.',
+  'rights-power': {
+    title: 'Rights & Power',
+    description: 'Reporting on civil liberties, institutional power, and the consequences when rights are treated as conditional.',
   },
-  economy: {
-    title: 'Economy',
-    description: 'Economic news, market updates, and financial analysis.',
+  'off-grid': {
+    title: 'Off Grid',
+    description: 'Practical coverage of resilient living, land, energy, food, and building a life with fewer dependencies.',
   },
-  health: {
-    title: 'Health',
-    description: 'Health news, medical breakthroughs, and wellness insights.',
+  'self-reliance': {
+    title: 'Self-Reliance',
+    description: 'Skills, tools, and stories for people making room to live on their own terms.',
   },
-  technology: {
-    title: 'Technology',
-    description: 'Technology news, innovation, and digital trends.',
+  'legal-exile': {
+    title: 'Legal Exile',
+    description: 'Careful reporting on people displaced, marginalized, or recast by systems of law and enforcement.',
   },
-  opinion: {
-    title: 'Opinion',
-    description: 'Opinion pieces, editorials, and commentary from our contributors.',
+  surveillance: {
+    title: 'Surveillance',
+    description: 'Tracking the technologies, policies, and institutions that shape privacy and personal autonomy.',
   },
-  news: {
-    title: 'News',
-    description: 'Latest news and breaking stories.',
+  dispatches: {
+    title: 'Dispatches',
+    description: 'Latest reporting from the edge of accepted narratives.',
   },
 };
 
@@ -36,7 +36,7 @@ export default function CategoryPage() {
     description: '',
   };
 
-  const categoryName = category?.charAt(0).toUpperCase() + (category?.slice(1) || '');
+  const categoryName = info.title || category?.split('-').map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
 
   return (
     <Layout>

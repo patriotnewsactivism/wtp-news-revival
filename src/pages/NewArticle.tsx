@@ -19,7 +19,7 @@ import {
 import { ArrowLeft, Save } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
-const categories = ['News', 'Politics', 'Economy', 'Health', 'Technology', 'Opinion'];
+const categories = ['Dispatches', 'Rights & Power', 'Off Grid', 'Self-Reliance', 'Legal Exile', 'Surveillance'];
 
 function generateSlug(title: string): string {
   return title
@@ -40,8 +40,8 @@ export default function NewArticle() {
     excerpt: '',
     content: '',
     featured_image: '',
-    category: 'News',
-    author: 'WTP Staff',
+    category: 'Dispatches',
+    author: 'Outlaw.News Desk',
     is_featured: false,
     is_published: true,
     meta_title: '',
@@ -237,7 +237,7 @@ export default function NewArticle() {
                     id="tags"
                     value={tagsInput}
                     onChange={(e) => setTagsInput(e.target.value)}
-                    placeholder="politics, economy, breaking"
+                    placeholder="off-grid, civil-liberties, self-reliance"
                   />
                 </div>
 
