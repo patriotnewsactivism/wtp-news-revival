@@ -27,7 +27,7 @@ export function Header() {
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center text-sm">
-          <span className="font-body">Truth · Liberty · Justice</span>
+          <span className="font-body">Independent · Self-Reliant · Unafraid</span>
           <div className="flex items-center gap-4">
             <span className="hidden sm:inline">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
             {isAuthenticated ? (
