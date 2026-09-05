@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, BookOpenCheck, MapPin, Scale, Sprout } from 'lucide-react';
+import { ArrowUpRight, BookOpenCheck, Camera, MapPin, Scale, Sprout } from 'lucide-react';
 
 const focusAreas = [
   {
@@ -60,6 +60,28 @@ export function EditorialFocus() {
           separate evidence from allegation, link to primary records where possible, and make room for the human impact a system can leave behind.
         </p>
       </div>
+
+      <aside className="mt-5 rounded-lg border border-border bg-secondary/55 p-6">
+        <div className="flex gap-4">
+          <Camera className="mt-1 h-5 w-5 shrink-0 text-accent" aria-hidden="true" />
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-accent">Surveillance watch</p>
+            <h3 className="mt-2 font-display text-2xl font-bold text-foreground">Flock cameras: questions worth asking before a rollout</h3>
+            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+              Automatic license-plate readers turn vehicle observations into searchable records across time and location. The central question is not only what a camera sees, but who can search the data, how long it remains available, and what oversight exists.
+            </p>
+            <ul className="mt-4 grid gap-2 text-sm leading-relaxed text-foreground md:grid-cols-2">
+              <li>• Request the contract, retention schedule, audit-log policy, and list of outside agencies with access.</li>
+              <li>• Ask whether searches require a case number, supervisor approval, and a documented purpose.</li>
+              <li>• Attend the public meeting, submit records requests, and ask local counsel or a civil-liberties organization about applicable protections.</li>
+              <li>• Compare official claims with the written policy before drawing conclusions.</li>
+            </ul>
+            <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
+              Background: <a className="underline underline-offset-2 hover:text-foreground" href="https://sls.eff.org/technologies/automated-license-plate-readers-alprs?language=en" target="_blank" rel="noreferrer">EFF’s ALPR explainer</a> and <a className="underline underline-offset-2 hover:text-foreground" href="https://www.aclu.org/news/privacy-technology/tracking-alpr-cameras/despite-new-updates-flocks-creepy-cameras-remain-major-civil-liberties-threat" target="_blank" rel="noreferrer">ACLU’s current Flock analysis</a>.
+            </p>
+          </div>
+        </div>
+      </aside>
     </section>
   );
 }
