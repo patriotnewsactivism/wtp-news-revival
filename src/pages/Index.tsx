@@ -11,7 +11,7 @@ const Index = () => {
       <HeroSection />
       <FeaturedArticles />
       <div className="editorial-divider container mx-auto px-4" />
-      <ArticleGrid title="Latest News" limit={9} />
+      <ArticleGrid title="Latest Dispatches" limit={9} />
     </Layout>
   );
 };

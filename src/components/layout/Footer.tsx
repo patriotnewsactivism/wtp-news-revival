@@ -3,11 +3,11 @@ import { Facebook, Twitter, Youtube, Mail } from 'lucide-react';
 
 const footerLinks = {
   categories: [
-    { name: 'Politics', href: '/category/politics' },
-    { name: 'Economy', href: '/category/economy' },
-    { name: 'Health', href: '/category/health' },
-    { name: 'Technology', href: '/category/technology' },
-    { name: 'Opinion', href: '/category/opinion' },
+    { name: 'Rights & Power', href: '/category/rights-power' },
+    { name: 'Off Grid', href: '/category/off-grid' },
+    { name: 'Self-Reliance', href: '/category/self-reliance' },
+    { name: 'Legal Exile', href: '/category/legal-exile' },
+    { name: 'Surveillance', href: '/category/surveillance' },
   ],
   company: [
     { name: 'About Us', href: '/about' },
@@ -31,12 +31,12 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-display font-bold text-lg">W</span>
+                <span className="text-accent-foreground font-display font-bold text-lg">O</span>
               </div>
-              <span className="font-display text-xl font-bold">We The People News</span>
+              <span className="font-display text-xl font-bold">Outlaw.News</span>
             </Link>
             <p className="text-primary-foreground/80 text-sm mb-4">
-              Delivering truth, liberty, and justice through independent journalism since 2024.
+              Independent reporting on self-reliance, civil liberties, and life beyond broken systems.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-accent transition-colors">

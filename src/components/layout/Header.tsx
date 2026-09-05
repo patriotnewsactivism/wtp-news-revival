@@ -6,10 +6,10 @@ import { useAuth } from '@/hooks/useAuth';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Politics', href: '/category/politics' },
-  { name: 'Economy', href: '/category/economy' },
-  { name: 'Health', href: '/category/health' },
-  { name: 'Opinion', href: '/category/opinion' },
+  { name: 'Rights & Power', href: '/category/rights-power' },
+  { name: 'Off Grid', href: '/category/off-grid' },
+  { name: 'Self-Reliance', href: '/category/self-reliance' },
+  { name: 'Legal Exile', href: '/category/legal-exile' },
 ];
 
 export function Header() {
@@ -48,14 +48,14 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-              <span className="text-accent-foreground font-display font-bold text-xl">W</span>
+              <span className="text-accent-foreground font-display font-bold text-xl">O</span>
             </div>
             <div>
               <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground tracking-tight">
-                We The People
+                Outlaw.News
               </h1>
               <p className="text-xs text-muted-foreground font-body tracking-widest uppercase">
-                News
+                Independent field reporting
               </p>
             </div>
           </Link>
